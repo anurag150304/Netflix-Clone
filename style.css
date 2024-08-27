@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    color: #fff;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    background-image: url(Images/IN-en-20240520-popsignuptwoweeks-perspective_alpha_website_large..jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #00000099;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.563em;
+}
+
+.logo img {
+    width: 9.25em;
+    opacity: 0.85;
+}
+
+.lang {
+    background-color: #121313;
+    padding: 0.45em 1.7em;
+    font-size: 1rem;
+    border: 0.05em solid #ffffff5f;
+    border-radius: 0.3em;
+    margin: 0 1em;
+}
+
+.btn {
+    background-color: #e50914;
+    font-size: 1rem;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 0.4em;
+    font-weight: 600;
+}
+
+.title {
+    padding: 10em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.title .one {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.title .two {
+    font-size: 1.5rem;
+}
+
+.title .three {
+    font-size: 1.25rem;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.625em;
+}
+
+.input-email {
+    font-size: 1rem;
+    padding: 1em 10em 1em 1em;
+    background-color: #16121183;
+    border: 0.05em solid #ffffff5f;
+    border-radius: 0.25em;
+}
+
+.btn2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0.6em 1.5em 0.6em 0.7em;
+    background-color: #e50914;
+    border: none;
+    border-radius: 0.2em;
+}
+
+.seperation {
+    height: 0.45em;
+    background-color: #232323;
+}
+
+section {
+    background-color: #000;
+    padding: 5em 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25em;
+    margin: 0 2em;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.heading h1 {
+    font-size: 3rem;
+}
+
+.heading p {
+    font-size: 1.5rem;
+}
+
+.theme {
+    position: relative;
+
+}
+
+.theme img {
+    position: relative;
+    width: 29em;
+    z-index: 10;
+}
+
+.theme video {
+    width: 20.8em;
+    position: absolute;
+    left: 4em;
+    top: 4.6em;
+}
+
+.theme .video2 {
+    width: 19em;
+    position: absolute;
+    left: 5em;
+    top: 2.5em;
+}
+
+.QnA-section {
+    padding: 2em 2em 4.5em 2em;
+}
+
+.QnA-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.questions {
+    margin: 1.2em 0;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 0.5em;
+}
+
+.boxes {
+    height: 3.5em;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boxes i {
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
+.boxes p,
+.boxes i {
+    padding: 0 1em;
+}
+
+.boxes:hover {
+    background-color: #414141;
+}
+
+.questions+p {
+    font-size: 1.25em;
+    text-align: center;
+    margin: 2em auto 1em auto;
+}
+
+footer {
+    padding: 4em 2em;
+}
+
+footer>p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.aside-links {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.875em 0;
+    gap: 1em;
+}
+
+.aside-links a {
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+.aside-links+.lang {
+    margin: 0;
+}
+
+.ind {
+    margin: 1em 0;
+}
+
+@media Screen and (min-width: 432px) and (max-width: 769px) {
+    html {
+        font-size: 12px;
+
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .theme img {
+        width: 53em;
+    }
+
+    .theme video {
+        width: 42em;
+        position: absolute;
+        left: 4.438em;
+        top: 5.313em;
+    }
+
+    .theme .video2 {
+        width: 34em;
+        position: absolute;
+        left: 9.5em;
+        top: 4.5em;
+    }
+
+    .aside-links {
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 431px) {
+    html {
+        font-size: 11px;
+    }
+
+    .title {
+        padding: 5em 3em 3em 3em;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .input-email {
+        font-size: 1.2rem;
+    }
+
+    .btn2 {
+        font-size: 1.75rem;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .aside-links {
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        font-size: 1.5em;
+    }
+
+    footer>p {
+        font-size: 1.8rem;
+    }
+}
